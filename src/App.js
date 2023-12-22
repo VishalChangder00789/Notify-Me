@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import NotesView from "./components/NotesView/NotesView";
+import { nanoid } from "nanoid";
 
 function App() {
   // Storing and changing the data for single Data
   const [myNotes, setMyNotes] = useState([
     {
-      id: 1,
-      title: "Dummy",
-      description: "A dummy desciption",
+      id: nanoid(),
+      title: "Bishal Changdeer",
+      description:
+        "I am a Full Stack Web Developer, I have completed my B.Tech from University of Petroleum and Energy Studies.",
       color: "#000000",
       createdOn: "04/06/1999",
     },
