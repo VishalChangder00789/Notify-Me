@@ -7,6 +7,7 @@
     justify-content: space-around;
     border-radius: 14px;
     box-shadow: 2px 2px 12px rgba(15, 15, 15, 0.582);
+    position: relative;
 }
 
 
@@ -14,14 +15,15 @@
     /* border: 2px solid rgb(100, 241, 0); */
     background: rgba(0, 0, 0, 0.323);
     width: 80%;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 18px;
     letter-spacing: 4px;
     padding: 2%;
+    overflow-wrap: break-word;
     border-radius: 7px;
+    margin: 2%;
 
 }
 
@@ -29,13 +31,15 @@
     /* border: 2px solid rgb(100, 241, 0); */
     background: rgba(0, 0, 0, 0.323);
     width: 80%;
-    display: flex;
     color: white;
     font-size: 14px;
     padding: 2%;
     min-height: 180px;
     padding-left: 5%;
     border-radius: 7px;
+    overflow-wrap: break-word;
+    margin: 2%;
+
 }
 
 .NotesTabContainer_Date{
@@ -53,4 +57,79 @@
     align-items: center;
     font-weight: bold;
     letter-spacing: 4px;
+    margin: 2%;
+
+}
+
+.NotesTabContainer_Date_Delete{
+    background: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    background: red;
+    font-weight: bold;
+}
+
+.NotesTabContainer_Edit{
+    background: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+    /* background: red; */
+    font-weight: bold;
+    /* border: 2px solid blue */
+    
+}
+
+.NotesTabContainer_Edit >img{
+    height: 20px;
+    width: 20px;
+    border-radius: 7px;
+
+}
+
+.NotesTabContainer_UpdateButton{
+    background: rgba(0, 255, 34, 0.725);
+    width: 80%;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    height: 30px;
+    border-radius: 7px;
+
+}
+
+.NotesTabContainer_Cancel{
+    background: none;
+    border: 2px solid black;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    background: rgba(255, 166, 0, 0.718);
+    border-radius: 7px;
 }
