@@ -13,23 +13,27 @@ const Notes = ({
   myNotes,
   setMyNotes,
 }) => {
+  // Checks if the Note is in edit mode or not
   const [isEdit, setIsEdit] = useState(false);
 
+  // Use state to handle edited Inputs
   const [editInputTitle, setEditInputTitle] = useState("");
   const [editInputDescription, setEditInputDescription] = useState("");
 
+  // Handles when the user clicks on the edit button at the bottom left corner of each note
   const handleEdit = () => {
     setIsEdit(true);
-
     setEditInputTitle(title);
     setEditInputDescription(description);
   };
 
+  // If user decides to cancel from the edit mode
   const handleCancel = () => {
     setIsEdit(false);
   };
 
-  const handleUpdateNote = (title, description) => {
+  // Invokes when the user clicks on Update Note Button
+  const handleUpdateNote = () => {
     const dateData = new Date();
     const dateObject = {
       date: dateData.getDate(),

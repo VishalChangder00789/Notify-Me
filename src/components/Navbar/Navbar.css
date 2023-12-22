@@ -7,22 +7,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.379); */
     position: sticky;
-    /* border: 2px solid red; */
     background: none;
 }
 
 
 .Navbar_Image{
-    /* border: 2px solid red; */
     display: flex;
     height:100%;
     width: 100%;
     justify-content: center;
     align-items: center;
     background: none;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.379);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.379);   
+}
 
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles for iPhone XR, 11 */
+    .NavbarContainer{
+        /* border: 2px solid red; */
+        justify-content: flex-start;
+        height: 100%;
+        width: 18%;
+    }
     
+    .Navbar_Image{
+        border-radius: 20px 0px 0px 20px;        
+
+    }
+
 }

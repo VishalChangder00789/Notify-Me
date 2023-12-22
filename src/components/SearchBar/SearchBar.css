@@ -1,6 +1,4 @@
 
-
-
 .NavbarContainer_Search{
     display: flex;
     width: 25%;
@@ -24,4 +22,18 @@
     font-family: 'Poppins', sans-serif;
 
     
+}
+
+
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .NavbarContainer_Search{
+        /* border: 2px solid crimson; */
+        width: 80%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+
+
+    }
 }

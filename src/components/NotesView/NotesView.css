@@ -1,29 +1,22 @@
 .NotesViewContainer{
-    /* border: 2px solid red; */
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
+    /* border: 2px solid black; */
 }
 
 .HeaderContainer{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
-    /* margin-top: 2%; */
     position: sticky;
     top: 0;
     padding-top: 1%;
     padding-bottom: 1%;
     z-index: 100;
-    /* background: none; */
-    background: rgba(237, 188, 119, 0.775);
+    background: rgba(255, 218, 166, 0.616);
     
 }
 
 .NotesContainer_Super{
-    /* margin-top: 5%; */
-    /* border: 2px solid green; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +37,22 @@
     background: none;
 
     
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles for iPhone XR, 11 */
+    .HeaderContainer{
+        /* border: 2px solid red; */
+        justify-content: center;
+        height: 70px;
+        background: none;
+        margin-top: 1%;
+        margin-bottom: 10%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        align-items: center;
+
+
+    }
+
 }

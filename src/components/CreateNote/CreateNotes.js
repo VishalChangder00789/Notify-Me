@@ -8,14 +8,21 @@ const CreateNote = ({ myNotes, setMyNotes }) => {
   const [description, setDescription] = useState("");
   const [pickColor, setPickColor] = useState("");
 
+  // Arrays of colors pre-defined for the user to select from.
   const colors = ["#802B5B", "#AA405B", "#510A32", "#801336"];
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
   };
+
   const handleDescriptionChange = (e) => {
     setDescription(e.target.value);
   };
+
+  /**
+   * Method add the created object into the main notes data
+   * @returns
+   */
   const handleAddNotes = () => {
     if (!title || !description) {
       console.log("Enter Title or Description");

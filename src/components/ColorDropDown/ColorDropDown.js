@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./ColorDropDown.css";
 
+/**
+ *
+ * @param {Array of colors,UseState(set) : color picker,UseState : selected color} param0
+ * @returns
+ */
 const ColorDropDown = ({ colors, setPickColor, pickColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
