@@ -1,0 +1,40 @@
+.NotesViewContainer{
+    /* border: 2px solid red; */
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.HeaderContainer{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2%; */
+    position: sticky;
+    top: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.NotesContainer_Super{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.NotesContainer{
+    /* border: 2px solid red; */
+    /* margin-top: 5%; */
+    width: 80%;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 45px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    
+}

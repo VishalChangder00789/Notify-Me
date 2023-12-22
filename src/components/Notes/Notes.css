@@ -1,0 +1,56 @@
+.NotesTabContainer{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    min-height: 300px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 14px;
+    box-shadow: 2px 2px 12px rgba(15, 15, 15, 0.582);
+}
+
+
+.NotesTabContainer_Title{
+    /* border: 2px solid rgb(100, 241, 0); */
+    background: rgba(0, 0, 0, 0.323);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding: 2%;
+    border-radius: 7px;
+
+}
+
+.NotesTabContainer_Description{
+    /* border: 2px solid rgb(100, 241, 0); */
+    background: rgba(0, 0, 0, 0.323);
+    width: 80%;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    padding: 2%;
+    min-height: 180px;
+    padding-left: 5%;
+    border-radius: 7px;
+}
+
+.NotesTabContainer_Date{
+    /* border: 2px solid rgb(100, 241, 0); */
+    background: rgba(0, 0, 0, 0.323);
+    width: 80%;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    padding: 2%;
+    padding-left: 5%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
