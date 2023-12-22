@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import "./SearchBar.css";
 
-const SearchBar = ({ setSearchedNotes }) => {
+const SearchBar = ({ searchedNotes, setSearchedNotes }) => {
   const [searchText, setSearchText] = useState("");
 
   const handleChange = (e) => {
@@ -18,6 +18,11 @@ const SearchBar = ({ setSearchedNotes }) => {
       clearTimeout(timerId);
     };
   }, [searchText]);
+
+  useEffect(() => {
+    console.log("rANS");
+    setSearchText(searchedNotes);
+  }, [searchedNotes]);
 
   return (
     <div className="NavbarContainer_Search">

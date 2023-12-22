@@ -8,6 +8,7 @@ import CreateNote from "../CreateNote/CreateNotes";
 const NotesView = ({
   myNotes,
   setMyNotes,
+  searchedNotes,
   setSearchedNotes,
   setNotesToDisplay,
   notesToDisplay,
@@ -22,7 +23,10 @@ const NotesView = ({
     <div className="NotesViewContainer">
       <div className="HeaderContainer">
         <Navbar />
-        <SearchBar setSearchedNotes={setSearchedNotes} />
+        <SearchBar
+          searchedNotes={searchedNotes}
+          setSearchedNotes={setSearchedNotes}
+        />
       </div>
 
       <div className="NotesContainer_Super">

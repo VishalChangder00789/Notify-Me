@@ -1,9 +1,12 @@
+
+
+
 .NavbarContainer_Search{
     display: flex;
     width: 25%;
-    background: rgba(90, 90, 90, 0.668);
+    background: rgb(0, 0, 0);
     height: 60px;
-    border-radius: 7px 0px 0px 7px;
+    /* border-radius: 7px 0px 0px 7px; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -13,9 +16,12 @@
 .InputContainer{
     height: 60%;
     width: 90%;
-    border-radius: 7px;
+    border-radius: 2px;
     background: rgba(196, 194, 194, 0.086);
     border: none;
     color: white;
     padding-left: 2%;
+    font-family: 'Poppins', sans-serif;
+
+    
 }

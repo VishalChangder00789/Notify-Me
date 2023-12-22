@@ -2,32 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: rgb(120, 0, 150);
-
+  /* background: rgb(223, 193, 163); */
+  background: linear-gradient(to right, #efd598c5, #e4a02add);
 }
 .App{
   /* border: 2px solid red; */
   min-height: 100vh;
   /* background: rgb(235, 210, 210); */
+  background: url('./assets/NM2.png');
+  background-size: 55px;
+  
+  
 }
 
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
+  background: none;
+
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #00eeff;
+  background: #00eeff00;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #15f47d;
+  background: #15f47d00;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0052d6;
+  background: #0052d600;
 }
-

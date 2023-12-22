@@ -7,12 +7,12 @@
     justify-content: space-around;
     border-radius: 14px;
     box-shadow: 2px 2px 12px rgba(15, 15, 15, 0.582);
-    background: rgb(152, 152, 241);
+    background: rgb(124, 124, 228);
 }
 
 .CreateNoteContainer_Title{
     background: rgba(0, 0, 0, 0.323);
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,8 @@
     padding: 2%;
     border-radius: 7px;
     color: white;
+    height: 30px;
+    border: none;
 }
 
 .CreateNoteContainer_Title::placeholder{
@@ -30,14 +32,16 @@
 .CreateNoteConatner_AddDescription{
        /* border: 2px solid rgb(100, 241, 0); */
        background: rgba(0, 0, 0, 0.323);
-       width: 80%;
+       width: 90%;
        display: flex;
        color: white;
        font-size: 14px;
        padding: 2%;
-       min-height: 100px;
+       min-height: 150px;
        padding-left: 5%;
        border-radius: 7px;
+        border: none;
+
 }
 .CreateNoteConatner_AddDescription::placeholder{
     color: white;
@@ -54,7 +58,7 @@
     align-items: center;
     font-weight: bold;
     letter-spacing: 4px;
-    height: 30px;
+    min-height: 30px;
     border-radius: 7px;
 }
 

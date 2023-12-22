@@ -8,25 +8,7 @@ const CreateNote = ({ myNotes, setMyNotes }) => {
   const [description, setDescription] = useState("");
   const [pickColor, setPickColor] = useState("");
 
-  const colors = [
-    "#D44A2C",
-    "#F38733",
-    "#F3B329",
-    "#F3E429",
-    "#C8F329",
-    "#85F329",
-    "#38F329",
-    "#29F388",
-    "#29F3D1",
-    "#29D4F3",
-    "#2972F3",
-    "#7629F3",
-    "#AD29F3",
-    "#F029F3",
-    "#F329B3",
-    "#F32960",
-    "#F32929",
-  ];
+  const colors = ["#802B5B", "#AA405B", "#510A32", "#801336"];
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);

@@ -10,7 +10,7 @@ function App() {
       id: 1,
       title: "Dummy",
       description: "A dummy desciption",
-      color: "red",
+      color: "#000000",
       createdOn: "04/06/1999",
     },
   ]);
@@ -49,6 +49,7 @@ function App() {
       localStorage.setItem("data", "");
     }
     setNotesToDisplay(myNotes);
+    setSearchedNotes("");
   }, [myNotes]);
 
   useEffect(() => {

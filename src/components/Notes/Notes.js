@@ -64,10 +64,28 @@ const Notes = ({
   };
 
   return !isEdit ? (
-    <div className="NotesTabContainer" style={{ background: `${color}` }}>
-      <div className="NotesTabContainer_Title">{title}</div>
-      <div className="NotesTabContainer_Description">{description}</div>
-      <div className="NotesTabContainer_Date">{createdOn}</div>
+    <div
+      className="NotesTabContainer"
+      style={{ background: `rgba(255,255,255,0.85)` }}
+    >
+      <div
+        className="NotesTabContainer_Title"
+        style={{ background: `${color}` }}
+      >
+        {title}
+      </div>
+      <div
+        className="NotesTabContainer_Description"
+        style={{ background: `${color}` }}
+      >
+        {description}
+      </div>
+      <div
+        className="NotesTabContainer_Date"
+        style={{ background: `${color}` }}
+      >
+        {createdOn}
+      </div>
       <div onClick={handleEdit} className="NotesTabContainer_Edit">
         <img src={pencil} />
       </div>
@@ -91,7 +109,10 @@ const Notes = ({
         onChange={(e) => handleDescriptionChange(e)}
       />
       <div className="NotesTabContainer_UpdateButton">
-        <CreateButton title="Add Note" handleButtonClick={handleUpdateNote} />
+        <CreateButton
+          title="Update Note"
+          handleButtonClick={handleUpdateNote}
+        />
       </div>
 
       <div onClick={handleCancel} className="NotesTabContainer_Cancel">

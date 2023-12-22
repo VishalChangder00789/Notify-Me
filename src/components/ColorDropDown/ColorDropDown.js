@@ -46,7 +46,7 @@ const ColorDropDown = ({ colors, setPickColor, pickColor }) => {
               onClick={() => handleColorClick(color)}
               key={index}
               className="color-option"
-              style={{ backgroundColor: color }}
+              style={{ backgroundColor: `${color}` }}
             ></div>
           ))}
         </div>

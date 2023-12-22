@@ -6,15 +6,16 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 14px;
-    box-shadow: 2px 2px 12px rgba(15, 15, 15, 0.582);
+    box-shadow: 2px 2px 5px rgba(15, 15, 15, 0.582);
     position: relative;
+    padding: 5%;
 }
 
 
 .NotesTabContainer_Title{
     /* border: 2px solid rgb(100, 241, 0); */
     background: rgba(0, 0, 0, 0.323);
-    width: 80%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     color: white;
@@ -22,23 +23,27 @@
     letter-spacing: 4px;
     padding: 2%;
     overflow-wrap: break-word;
-    border-radius: 7px;
+    border-radius: 4px;
     margin: 2%;
+    box-shadow: 2px 2px 5px rgba(15, 15, 15, 0.582);
+
 
 }
 
 .NotesTabContainer_Description{
     /* border: 2px solid rgb(100, 241, 0); */
     background: rgba(0, 0, 0, 0.323);
-    width: 80%;
+    width: 90%;
     color: white;
     font-size: 14px;
     padding: 2%;
     min-height: 180px;
     padding-left: 5%;
-    border-radius: 7px;
+    border-radius: 4px;
     overflow-wrap: break-word;
     margin: 2%;
+    box-shadow: 2px 2px 5px rgba(15, 15, 15, 0.582);
+
 
 }
 
@@ -51,30 +56,33 @@
     font-size: 14px;
     padding: 2%;
     padding-left: 5%;
-    border-radius: 7px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     letter-spacing: 4px;
     margin: 2%;
+    box-shadow: 2px 2px 5px rgba(15, 15, 15, 0.582);
+
 
 }
 
 .NotesTabContainer_Date_Delete{
     background: none;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 50%;
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     top: -5%;
+    position: absolute;
     right: -5%;
-    background: red;
-    font-weight: bold;
+    background: rgb(206, 79, 79);
+    font-weight: lighter;
+    color: white;
 }
 
 .NotesTabContainer_Edit{
