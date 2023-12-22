@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./CreateNote.css";
 import CreateButton from "../Buttons/CreateButton/CreateButton";
 import ColorDropDown from "../ColorDropDown/ColorDropDown";
+import { nanoid } from "nanoid";
 
 const CreateNote = ({ myNotes, setMyNotes }) => {
   const [title, setTitle] = useState("");
@@ -36,7 +37,7 @@ const CreateNote = ({ myNotes, setMyNotes }) => {
     };
 
     const obj = {
-      id: myNotes.length + 1,
+      id: nanoid(),
       title: title,
       description: description,
       color: pickColor,

@@ -1,7 +1,6 @@
 .NotesViewContainer{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid black; */
 }
 
 .HeaderContainer{
@@ -26,23 +25,32 @@
 }
 
 .NotesContainer{
-    /* border: 2px solid red;   */
     width: 80%;
     min-height: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 45px;
-    /* padding-top: 2%;
-    padding-bottom: 2%; */
     background: none;
 
     
 }
 
+.FooterContainer{
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    height: 150px;
+    position: relative;
+}
+
+.FooterImage{
+    width: 10%;
+    height: 100%;
+}
+
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
-    /* Styles for iPhone XR, 11 */
     .HeaderContainer{
-        /* border: 2px solid red; */
         justify-content: center;
         height: 70px;
         background: none;
@@ -51,8 +59,11 @@
         padding-top: 0%;
         padding-bottom: 0%;
         align-items: center;
+    }
 
-
+    .FooterImage{
+        width: 200px;
+        height: 150px;
     }
 
 }

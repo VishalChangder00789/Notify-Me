@@ -5,6 +5,9 @@ import SearchBar from "../SearchBar/SearchBar";
 import Notes from "../Notes/Notes";
 import CreateNote from "../CreateNote/CreateNotes";
 
+import FooterImage from "../../assets/NM2.png";
+import GithubLog from "../../assets/GitHub-logo.png";
+
 const NotesView = ({
   myNotes,
   setMyNotes,
@@ -52,6 +55,10 @@ const NotesView = ({
           <CreateNote myNotes={myNotes} setMyNotes={setMyNotes} />
         </div>
       </div>
+
+      <footer className="FooterContainer">
+        <img src={FooterImage} className="FooterImage" />
+      </footer>
     </div>
   );
 };

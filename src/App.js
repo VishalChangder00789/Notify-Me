@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import NotesView from "./components/NotesView/NotesView";
-import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
-  // Storing and changing the data
+  // Storing and changing the data for single Data
   const [myNotes, setMyNotes] = useState([
     {
       id: 1,
@@ -15,9 +14,13 @@ function App() {
     },
   ]);
 
+  // Notes which are getting displayed
   const [notesToDisplay, setNotesToDisplay] = useState([]);
+
+  // The searchTerm which is getting updated after debouncing occurs
   const [searchedNotes, setSearchedNotes] = useState("");
 
+  // Getting and filtering the searched notes
   const getSearchedNotes = (searchedNotes) => {
     if (searchedNotes.trim() === "") {
       setNotesToDisplay(myNotes);
@@ -29,11 +32,10 @@ function App() {
       );
 
       setNotesToDisplay(filteredNotes);
-      console.log(myNotes);
     }
   };
 
-  // UseEffects
+  // When the component is mounted for the first time : Component Did Mount
   useEffect(() => {
     if (localStorage.getItem("data")) {
       setMyNotes(JSON.parse(localStorage.getItem("data")));
@@ -42,6 +44,7 @@ function App() {
     setNotesToDisplay(myNotes);
   }, []);
 
+  // Whenever mynotes are updated : Component didUpdate
   useEffect(() => {
     if (myNotes.length !== 0) {
       localStorage.setItem("data", JSON.stringify(myNotes));
@@ -52,6 +55,7 @@ function App() {
     setSearchedNotes("");
   }, [myNotes]);
 
+  // SideEffects whenver the searchTerm is changed
   useEffect(() => {
     getSearchedNotes(searchedNotes);
   }, [searchedNotes]);
@@ -71,5 +75,3 @@ function App() {
 }
 
 export default App;
-
-// [{"id":1,"title":"Dummy","description":"A dummy desciption","color":"red","createdOn":"04/06/1999"}]

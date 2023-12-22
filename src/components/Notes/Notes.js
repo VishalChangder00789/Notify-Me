@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Notes.css";
-import pencil from "./../../assets/pencil.png";
 import CreateButton from "../Buttons/CreateButton/CreateButton";
+
+import pencil from "./../../assets/pencil.png";
+import right from "../../assets/Tick.png";
+import wrong from "../../assets/Wrong.png";
 
 const Notes = ({
   title,
@@ -15,6 +18,7 @@ const Notes = ({
 }) => {
   // Checks if the Note is in edit mode or not
   const [isEdit, setIsEdit] = useState(false);
+  const [isDeleteOn, setIsDeleteOn] = useState(false);
 
   // Use state to handle edited Inputs
   const [editInputTitle, setEditInputTitle] = useState("");
@@ -94,10 +98,27 @@ const Notes = ({
         <img src={pencil} />
       </div>
       <div
-        onClick={() => handleClick(id)}
+        onClick={(e) => setIsDeleteOn(!isDeleteOn)}
         className="NotesTabContainer_Date_Delete"
       >
         X
+        {isDeleteOn ? (
+          <div className="NotesTabContainer_Date_Delete_Choose">
+            <div className="DeleteButton">
+              <img
+                onClick={() => {
+                  setIsDeleteOn(!isDeleteOn);
+                }}
+                src={wrong}
+              />
+            </div>
+            <div className="DeleteButton">
+              <img onClick={() => handleClick(id)} src={right} />
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   ) : (

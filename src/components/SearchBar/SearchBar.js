@@ -9,6 +9,7 @@ const SearchBar = ({ searchedNotes, setSearchedNotes }) => {
     setSearchText(e.target.value);
   };
 
+  // Code Debouncing
   useEffect(() => {
     const timerId = setTimeout(() => {
       setSearchedNotes(searchText);
@@ -20,7 +21,6 @@ const SearchBar = ({ searchedNotes, setSearchedNotes }) => {
   }, [searchText]);
 
   useEffect(() => {
-    console.log("rANS");
     setSearchText(searchedNotes);
   }, [searchedNotes]);
 
