@@ -1,7 +1,7 @@
 # How to start a React App in your local machine
 Clone the available github repository using 
 
-### `git clone https - open[https://github.com/VishalChangder00789/Notify-Me.git]`
+### `git clone https - copy (https://github.com/VishalChangder00789/Notify-Me.git)`
 
 Open the project in VSCode
 Open the terminal in that same directory
