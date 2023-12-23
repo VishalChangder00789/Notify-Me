@@ -8,7 +8,7 @@ function App() {
   const [myNotes, setMyNotes] = useState([
     {
       id: nanoid(),
-      title: "Bishal Changdeer",
+      title: "Bishal Changder",
       description:
         "I am a Full Stack Web Developer, I have completed my B.Tech from University of Petroleum and Energy Studies.",
       color: "#000000",
