@@ -1,5 +1,15 @@
-# Getting Started with Create React App
+# How to start a React App in your local machine
+Clone the available github repository using 
 
+### `git clone https link`
+
+Open the project in VSCode
+Open the terminal in that same directory
+
+Install the available dependencies
+
+### `npm install`
+  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
