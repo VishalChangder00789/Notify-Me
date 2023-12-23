@@ -77,10 +77,10 @@
     min-height: 30px;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 280px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
     /* Styles for iPhone XR, 11 */
     .CreateNoteContainer{
-        margin-bottom: 15%;
+        margin-bottom: 25%;
     }
 
 }

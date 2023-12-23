@@ -49,7 +49,7 @@
     height: 100%;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 280px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
     .HeaderContainer{
         justify-content: center;
         height: 70px;
@@ -59,11 +59,13 @@
         padding-top: 0%;
         padding-bottom: 0%;
         align-items: center;
+        /* border: 2px solid red; */
     }
 
     .FooterImage{
         width: 200px;
         height: 150px;
     }
+
 
 }
