@@ -49,8 +49,8 @@
 @media only screen and (min-device-width: 280px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
     /* Styles for iPhone XR, 11 */
     .color-options{
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+        gap: 8px;
         
     }
 
